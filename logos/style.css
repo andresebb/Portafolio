@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?8178t1");
-  src: url("fonts/icomoon.eot?8178t1#iefix") format("embedded-opentype"),
-    url("fonts/icomoon.ttf?8178t1") format("truetype"),
-    url("fonts/icomoon.woff?8178t1") format("woff"),
-    url("fonts/icomoon.svg?8178t1#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?effzl0");
+  src: url("fonts/icomoon.eot?effzl0#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?effzl0") format("truetype"),
+    url("fonts/icomoon.woff?effzl0") format("woff"),
+    url("fonts/icomoon.svg?effzl0#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -26,12 +26,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-instagram:before {
+.icon-react:before {
   content: "\e900";
+  color: #61dafb;
+}
+.icon-javascript:before {
+  content: "\e901";
+  color: #f7df1e;
+}
+.icon-bootstrap:before {
+  content: "\e902";
+  color: #563d7c;
+}
+.icon-css3:before {
+  content: "\e903";
+  color: #1572b6;
+}
+.icon-sass:before {
+  content: "\e904";
+  color: #c69;
+}
+.icon-instagram:before {
+  content: "\ea92";
 }
 .icon-twitter:before {
   content: "\ea96";
 }
 .icon-github:before {
   content: "\eab0";
+}
+.icon-html-five:before {
+  content: "\eae4";
+  color: orangered;
+}
+
+.icon-visualstudiocode:before {
+  content: "\e905";
+  color: #007acc;
 }
