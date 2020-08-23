@@ -1,0 +1,76 @@
+.habilidades {
+  margin-bottom: 36px;
+  h2,
+  h1 {
+    text-align: center;
+  }
+}
+
+.habilidades__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.habilidades p {
+  text-align: center;
+}
+
+.nivel {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.nivel p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: black;
+}
+
+.hight-father {
+  border-radius: 6px;
+  padding: 4px;
+  width: 100%;
+  background: #b2b2b254;
+  box-sizing: border-box;
+}
+
+.hight {
+  height: 6px;
+  background: linear-gradient(to bottom right, #007ca6 0%, #2bc48a 100%);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  width: 70%;
+}
+
+.caja {
+  text-align: center;
+  width: 150px;
+  padding: 14px;
+  border-radius: 6px;
+  margin: 24px;
+  box-shadow: 6px 10px 12px -4px #d3d0d0;
+  transition: 0.5s;
+}
+
+.caja:hover {
+  transform: scale(1.2);
+  z-index: 50;
+}
+
+@keyframes caja {
+  from {
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.caja span {
+  font-size: 28px;
+  padding: 6px;
+}

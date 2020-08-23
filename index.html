@@ -11,51 +11,55 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/2d05bc4f6d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./logos/style.css" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Page</title>
   </head>
   <body>
     <main>
-      <section class="principal">
-        <header class="header">
-          <div class="header__logo">
-            <a href="#">
-              <img
-                src="./img/logo2.webp"
-                alt="header logo"
-                width="120px"
-                height="80px"
-              />
-            </a>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="#" class="inicio">Inicio </a>
-                <div class="borde-cortado"></div>
-              </li>
-              <li><a href="#" class="sobre mi">Sobre mi</a></li>
-              <li><a href="#" class="proyectos">Proyectos</a></li>
-              <li><a href="#" class="contacto">Contacto</a></li>
+      <header class="header">
+        <div class="header__logo">
+          <a href="#">
+            <img
+              src="./img/logo2.webp"
+              alt="header logo"
+              width="120px"
+              height="80px"
+            />
+          </a>
+        </div>
+        <i class="fas fa-ellipsis-h" id="burger-menu"></i>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="#" class="inicio">Inicio </a>
+              <div class="borde-cortado inicio"></div>
+            </li>
+            <li><a href="#" class="sobre mi">Sobre mi</a></li>
+            <li><a href="#" class="proyectos">Proyectos</a></li>
+            <li><a href="#" class="contacto">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="hero__container">
+          <h2>Bienvenido</h2>
+          <h1>
+            Yo soy,
+            <ul class="lista">
+              <li class="elemento">Andres betancourt</li>
+              <li class="elemento">Frontend Developer</li>
             </ul>
-          </nav>
-        </header>
-        <section class="hero">
-          <div class="hero__container">
-            <h2>Bienvenido</h2>
-            <h1>
-              Yo soy,
-              <ul class="lista">
-                <li class="elemento">Andres betancourt</li>
-                <li class="elemento">Frontend Developer</li>
-              </ul>
-            </h1>
-            <h3>
-              "Incluso si fallas, terminaras haciendo algo genial en el proceso"
-            </h3>
-          </div>
-        </section>
+          </h1>
+          <h3>
+            "Incluso si fallas, terminaras haciendo algo genial en el proceso"
+          </h3>
+        </div>
         <div class="logos">
           <div class="logos__container">
             <a href="#" class="icon-twitter logo"></a>
@@ -65,127 +69,116 @@
         </div>
       </section>
     </main>
-    <section class="sobremi wow animate__animated animate__backInDown">
-      <div class="sobremi__container">
-        <div class="sobremi__imagen">
-          <img src="./img/perfil.png" alt="Foto perfil" />
-        </div>
-        <div class="sobremi__texto">
-          <h1>Un poco sobre mi</h1>
-          <p>
-            Soy un joven programador desde barinas, Venezuela. Actualmente soy
-            estudiante en <a>Platzi</a> .Cada dia me esfuerzo por aprender cosas
-            nuevas y estoy en constante crecimiento
-          </p>
-        </div>
-      </div>
-    </section>
-    <div class="habilidades">
-      <h1>Habilidades</h1>
-      <p>Estas son algunas de las tecnologias que manejo</p>
-      <div class="habilidades__container">
-        <div class="caja">
-          <div>
-            <span class="icon-html-five"></span>
+
+    <div class="elcontainer">
+      <div class="imagen-cool"></div>
+      <section class="sobremi wow animate__animated animate__backInDown">
+        <h1>Un poco sobre mi</h1>
+        <div class="sobremi__container">
+          <div class="sobremi__imagen">
+            <img src="./img/perfil.png" alt="Foto perfil" />
           </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
-            </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
-            </div>
+          <div class="sobremi__texto">
+            <p>
+              Soy un joven programador desde barinas, Venezuela. Actualmente soy
+              estudiante en <a>Platzi</a> .Cada dia me esfuerzo por aprender
+              cosas nuevas y estoy en constante crecimiento.
+            </p>
           </div>
         </div>
-        <div class="caja">
-          <div>
-            <span class="icon-css3"></span>
-          </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
+      </section>
+      <div class="habilidades">
+        <h1>Habilidades</h1>
+        <p>Estas son algunas de las tecnologias que manejo</p>
+        <div class="habilidades__container">
+          <div class="caja">
+            <div>
+              <span class="icon-html-five"></span>
             </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
-            </div>
-          </div>
-        </div>
-        <div class="caja">
-          <div>
-            <span class="icon-bootstrap"></span>
-          </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
-            </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
+            <div>
+              <div class="hight-father">
+                <div class="hight"></div>
+              </div>
+              <div class="nivel">
+                <p>Bajo</p>
+                <p>Medio</p>
+                <p>Alto</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="caja">
-          <div>
-            <span class="icon-javascript"></span>
-          </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
+          <div class="caja">
+            <div>
+              <span class="icon-css3"></span>
             </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
-            </div>
-          </div>
-        </div>
-        <div class="caja">
-          <div>
-            <span class="icon-sass"></span>
-          </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
-            </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
+            <div>
+              <div class="hight-father">
+                <div class="hight"></div>
+              </div>
+              <div class="nivel">
+                <p>Bajo</p>
+                <p>Medio</p>
+                <p>Alto</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="caja">
-          <div>
-            <span class="icon-react"></span>
-          </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
+          <div class="caja">
+            <div>
+              <span class="icon-bootstrap"></span>
             </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
+            <div>
+              <div class="hight-father">
+                <div class="hight"></div>
+              </div>
+              <div class="nivel">
+                <p>Bajo</p>
+                <p>Medio</p>
+                <p>Alto</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="caja">
-          <div>
-            <span class="icon-visualstudiocode"></span>
-          </div>
-          <div>
-            <div class="hight-father">
-              <div class="hight"></div>
+          <div class="caja">
+            <div>
+              <span class="icon-javascript"></span>
             </div>
-            <div class="nivel">
-              <p>Bajo</p>
-              <p>Medio</p>
-              <p>Alto</p>
+            <div>
+              <div class="hight-father">
+                <div class="hight"></div>
+              </div>
+              <div class="nivel">
+                <p>Bajo</p>
+                <p>Medio</p>
+                <p>Alto</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja">
+            <div>
+              <span class="icon-sass"></span>
+            </div>
+            <div>
+              <div class="hight-father">
+                <div class="hight"></div>
+              </div>
+              <div class="nivel">
+                <p>Bajo</p>
+                <p>Medio</p>
+                <p>Alto</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja">
+            <div>
+              <span class="icon-react"></span>
+            </div>
+            <div>
+              <div class="hight-father">
+                <div class="hight"></div>
+              </div>
+              <div class="nivel">
+                <p>Bajo</p>
+                <p>Medio</p>
+                <p>Alto</p>
+              </div>
             </div>
           </div>
         </div>
@@ -194,9 +187,9 @@
 
     <section class="portafolio">
       <h1 class="portafolio__titulo">Portafolio</h1>
-      <p>Estas son</p>
+      <p>Estas son algunas de las tecnologias que majeo</p>
       <div class="portafolio__container">
-        <div class="portafolio__box">
+        <div class="portafolio__box box1">
           <div class="portafolio__texto">
             <div class="portafolio__texto--container">
               <h3>Woorki</h3>
@@ -208,7 +201,7 @@
             </div>
           </div>
         </div>
-        <div class="portafolio__box">
+        <div class="portafolio__box box2">
           <div class="portafolio__texto">
             <div class="portafolio__texto--container">
               <h3>Woorki</h3>
@@ -220,10 +213,22 @@
             </div>
           </div>
         </div>
-        <div class="portafolio__box">
+        <div class="portafolio__box box3">
           <div class="portafolio__texto">
             <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
+              <h3>Platzi video</h3>
+              <div class="portafolio__texto-skills">
+                <p>html</p>
+                <p>css</p>
+                <p>javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="portafolio__box box4">
+          <div class="portafolio__texto">
+            <div class="portafolio__texto--container">
+              <h3>PLatzi music</h3>
               <div class="portafolio__texto-skills">
                 <p>React</p>
                 <p>javascript</p>
@@ -232,74 +237,14 @@
             </div>
           </div>
         </div>
-        <div class="portafolio__box">
+        <div class="portafolio__box box5">
           <div class="portafolio__texto">
             <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
+              <h3>100tifico</h3>
               <div class="portafolio__texto-skills">
-                <p>React</p>
-                <p>javascript</p>
                 <p>html</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__box">
-          <div class="portafolio__texto">
-            <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
-              <div class="portafolio__texto-skills">
-                <p>React</p>
+                <p>css</p>
                 <p>javascript</p>
-                <p>html</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__box">
-          <div class="portafolio__texto">
-            <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
-              <div class="portafolio__texto-skills">
-                <p>React</p>
-                <p>javascript</p>
-                <p>html</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__box">
-          <div class="portafolio__texto">
-            <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
-              <div class="portafolio__texto-skills">
-                <p>React</p>
-                <p>javascript</p>
-                <p>html</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__box">
-          <div class="portafolio__texto">
-            <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
-              <div class="portafolio__texto-skills">
-                <p>React</p>
-                <p>javascript</p>
-                <p>html</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="portafolio__box">
-          <div class="portafolio__texto">
-            <div class="portafolio__texto--container">
-              <h3>Woorki</h3>
-              <div class="portafolio__texto-skills">
-                <p>React</p>
-                <p>javascript</p>
-                <p>html</p>
               </div>
             </div>
           </div>
@@ -308,9 +253,9 @@
     </section>
     <section class="contacto">
       <h1>Contacto</h1>
-      <h2>Trabajamos juntos?</h2>
       <div class="contacto__container">
         <form action="">
+          <h2>Trabajamos juntos?</h2>
           <div class="contacto__sujeto">
             <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
             <input type="text" name="email" id="email" placeholder="Email" />
@@ -324,13 +269,6 @@
           />
           <button>Enviar</button>
         </form>
-        <div>
-          <img
-            class="contacto__imagen"
-            src="./img/nino-computador.PNG"
-            alt=""
-          />
-        </div>
       </div>
     </section>
     <footer>
@@ -342,5 +280,6 @@
     <script>
       new WOW().init();
     </script>
+    <script src="index.js"></script>
   </body>
 </html>

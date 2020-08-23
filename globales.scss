@@ -1,0 +1,21 @@
+$color-principal: #2bc48a;
+$color-principal-oscuro: #298760;
+$color-azul: #007ca6;
+$color-azul-oscuro-letra: #2f4858;
+$color-letras: #bebebe;
+$color-background: #13223c;
+
+body {
+  font-size: 16px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #bebebe;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  position: relative;
+}
