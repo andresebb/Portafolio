@@ -14,10 +14,15 @@
 }
 
 .sobremi {
-  margin-top: 280px;
+  margin-top: 264px;
   position: relative;
+  color: white;
   h1 {
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #2bc48a;
+    font-size: 42px;
   }
   &__imagen {
     img {
@@ -27,9 +32,10 @@
   }
   &__container {
     display: grid;
-    grid-template-columns: 301px 455px;
+    grid-template-columns: 430px 500px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    grid-gap: 61px;
   }
 }

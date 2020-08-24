@@ -1,0 +1,41 @@
+.contacto {
+  padding: 24px;
+  position: relative;
+  background-image: url(./img/bg-curvy-desktop.svg);
+}
+
+.contacto h2 {
+  background: -webkit-linear-gradient(yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;
+}
+
+.contacto__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto__imagen {
+  height: 318px;
+  width: 500px;
+}
+
+input {
+  padding: 8px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid gray;
+  margin: 6px;
+}
+
+.mensaje {
+  width: 92%;
+  padding-bottom: 64px;
+}
+
+form {
+  max-width: 500px;
+  text-align: center;
+}

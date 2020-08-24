@@ -343,11 +343,16 @@ header a {
 }
 
 .sobremi {
-  margin-top: 280px;
+  margin-top: 264px;
   position: relative;
+  color: white;
 }
 .sobremi h1 {
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #2bc48a;
+  font-size: 42px;
 }
 .sobremi__imagen img {
   height: 300px;
@@ -355,14 +360,16 @@ header a {
 }
 .sobremi__container {
   display: grid;
-  grid-template-columns: 301px 455px;
+  grid-template-columns: 430px 500px;
   text-align: center;
   justify-content: center;
   align-items: center;
+  grid-gap: 61px;
 }
 
 .habilidades {
   margin-bottom: 36px;
+  color: white;
 }
 .habilidades h2,
 .habilidades h1 {
@@ -370,9 +377,10 @@ header a {
 }
 
 .habilidades__container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px 200px;
   justify-content: center;
+  grid-gap: 20px;
 }
 
 .habilidades p {
@@ -389,7 +397,7 @@ header a {
   margin: 0;
   font-size: 12px;
   font-weight: 500;
-  color: black;
+  color: white;
 }
 
 .hight-father {
@@ -412,12 +420,12 @@ header a {
 
 .caja {
   text-align: center;
-  width: 150px;
   padding: 14px;
+  background: #15294c;
   border-radius: 6px;
-  margin: 24px;
-  box-shadow: 6px 10px 12px -4px #d3d0d0;
+  /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .caja:hover {
@@ -433,6 +441,124 @@ header a {
 .caja span {
   font-size: 28px;
   padding: 6px;
+}
+
+.portafolio {
+  background: #13223c;
+  position: relative;
+}
+.portafolio h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #2bc48a;
+  font-size: 42px;
+  margin-top: 0;
+}
+.portafolio p {
+  text-align: center;
+}
+.portafolio__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.portafolio__box {
+  width: 331px;
+  height: 200px;
+  margin: 14px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.portafolio__texto {
+  display: none;
+  height: 100%;
+  align-items: center;
+  color: white;
+  background: #0c062a99;
+  border-radius: 6px;
+}
+.portafolio__texto--container {
+  text-align: center;
+  margin: 0 auto;
+  padding: 38px 55px;
+  border: 1px dashed white;
+}
+.portafolio__texto-skills {
+  display: flex;
+  justify-content: center;
+}
+.portafolio__texto-skills p {
+  margin: 0 6px;
+  opacity: 1;
+}
+.portafolio .box1 {
+  background-image: url(./img/portafolio-caja.PNG);
+}
+.portafolio .box2 {
+  background-image: url(./img/flyo.PNG);
+}
+.portafolio .box3 {
+  background-image: url(./img/platzi-video.PNG);
+}
+.portafolio .box4 {
+  background-image: url(./img/platzi-music.PNG);
+}
+.portafolio .box5 {
+  background-image: url(./img/100tifico.PNG);
+}
+
+.portafolio__box:hover .portafolio__texto {
+  display: flex;
+}
+
+.portafolio__imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.contacto {
+  padding: 24px;
+  position: relative;
+  background-image: url(./img/bg-curvy-desktop.svg);
+}
+
+.contacto h2 {
+  background: -webkit-linear-gradient(yellow, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: tomato;
+}
+
+.contacto__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contacto__imagen {
+  height: 318px;
+  width: 500px;
+}
+
+input {
+  padding: 8px;
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid gray;
+  margin: 6px;
+}
+
+.mensaje {
+  width: 92%;
+  padding-bottom: 64px;
+}
+
+form {
+  max-width: 500px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

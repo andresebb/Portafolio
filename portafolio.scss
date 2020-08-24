@@ -1,0 +1,83 @@
+.portafolio {
+  background: $color-background;
+  position: relative;
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #2bc48a;
+    font-size: 42px;
+    margin-top: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    width: 331px;
+    height: 200px;
+    margin: 14px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__texto {
+    display: none;
+    height: 100%;
+    align-items: center;
+    color: white;
+    background: #0c062a99;
+    border-radius: 6px;
+
+    &--container {
+      text-align: center;
+      margin: 0 auto;
+      padding: 38px 55px;
+      border: 1px dashed white;
+    }
+    &-skills {
+      display: flex;
+      justify-content: center;
+      p {
+        margin: 0 6px;
+        opacity: 1;
+      }
+    }
+  }
+  .box1 {
+    background-image: url(./img/portafolio-caja.PNG);
+  }
+
+  .box2 {
+    background-image: url(./img/flyo.PNG);
+  }
+
+  .box3 {
+    background-image: url(./img/platzi-video.PNG);
+  }
+
+  .box4 {
+    background-image: url(./img/platzi-music.PNG);
+  }
+
+  .box5 {
+    background-image: url(./img/100tifico.PNG);
+  }
+}
+
+.portafolio__box:hover .portafolio__texto {
+  display: flex;
+}
+
+.portafolio__imagen {
+  width: 100%;
+  height: 100%;
+}

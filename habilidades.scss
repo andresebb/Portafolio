@@ -1,5 +1,6 @@
 .habilidades {
   margin-bottom: 36px;
+  color: white;
   h2,
   h1 {
     text-align: center;
@@ -7,9 +8,10 @@
 }
 
 .habilidades__container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 200px 200px;
   justify-content: center;
+  grid-gap: 20px;
 }
 
 .habilidades p {
@@ -26,7 +28,7 @@
   margin: 0;
   font-size: 12px;
   font-weight: 500;
-  color: black;
+  color: white;
 }
 
 .hight-father {
@@ -49,12 +51,12 @@
 
 .caja {
   text-align: center;
-  width: 150px;
   padding: 14px;
+  background: #15294c;
   border-radius: 6px;
-  margin: 24px;
-  box-shadow: 6px 10px 12px -4px #d3d0d0;
+  /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .caja:hover {
