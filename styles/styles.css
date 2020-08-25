@@ -320,15 +320,12 @@ header .a-header:last-child {
 }
 @media screen and (max-width: 450px) {
   .hero {
-    padding: 6px 12px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .hero {
     margin-bottom: 360px;
+    padding: 6px 12px;
   }
   .hero ul {
     height: 42px;
+    width: 350px;
   }
   .hero h2 {
     font-weight: 300;
@@ -363,6 +360,18 @@ header .a-header:last-child {
     100% {
       margin-top: 0;
     }
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero ul {
+    width: 320px;
+  }
+  .hero h1 {
+    font-size: 26px li;
+    font-size-font-size: 28px;
+  }
+  .hero h2 {
+    letter-spacing: 12px;
   }
 }
 .imagen-cool {
@@ -411,7 +420,7 @@ header .a-header:last-child {
     margin-top: 0;
   }
   .sobremi__container {
-    grid-template-columns: 500px;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 600px) {
@@ -425,9 +434,9 @@ header .a-header:last-child {
     height: 260px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .sobremi__container {
-    grid-template-columns: 338px;
+    grid-template-columns: 280px;
   }
 }
 .habilidades__container {

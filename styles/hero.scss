@@ -193,15 +193,11 @@
 
 @media screen and (max-width: 450px) {
   .hero {
-    padding: 6px 12px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .hero {
     margin-bottom: 360px;
+    padding: 6px 12px;
     ul {
       height: 42px;
+      width: 350px;
     }
     h2 {
       font-weight: 300;
@@ -236,6 +232,24 @@
     }
     100% {
       margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero {
+    ul {
+      width: 320px;
+    }
+
+    h1 {
+      font-size: 26px li {
+        font-size: 28px;
+      }
+    }
+
+    h2 {
+      letter-spacing: 12px;
     }
   }
 }

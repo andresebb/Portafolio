@@ -46,7 +46,7 @@
       margin-top: 0;
     }
     &__container {
-      grid-template-columns: 500px;
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -66,10 +66,10 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .sobremi {
     &__container {
-      grid-template-columns: 338px;
+      grid-template-columns: 280px;
     }
   }
 }
