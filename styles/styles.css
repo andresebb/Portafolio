@@ -71,8 +71,11 @@ header .a-header:last-child {
 }
 
 .menu.is-active {
-  left: 0vw;
-  transition: 1s;
+  right: 0;
+}
+
+.cerrar {
+  right: -50vw !important;
 }
 
 @media screen and (max-width: 850px) {
@@ -85,23 +88,23 @@ header .a-header:last-child {
     font-size: 20px;
   }
   header .menu {
+    padding: 10% 0;
     background: #13223c;
     position: fixed;
+    width: 50vw;
     top: 10%;
-    left: -200vw;
-    width: 100%;
+    right: -50vw;
     transition: 1s;
     z-index: 100;
     text-align: center;
+    border-radius: 32px;
   }
   header .menu ul {
     padding: 0;
-    justify-content: center;
+    text-align: left;
     display: grid;
   }
   header .menu ul a {
-    text-transform: uppercase;
-    font-weight: bold;
     color: #2bc48a;
     cursor: pointer;
   }
@@ -594,19 +597,19 @@ header .a-header:last-child {
   opacity: 1;
 }
 .portafolio .box1 {
-  background-image: url(./img/portafolio-caja.PNG);
+  background-image: url(../img/portafolio-caja.PNG);
 }
 .portafolio .box2 {
-  background-image: url(./img/flyo.PNG);
+  background-image: url(../img/flyo.PNG);
 }
 .portafolio .box3 {
-  background-image: url(./img/platzi-video.PNG);
+  background-image: url(../img/platzi-video.PNG);
 }
 .portafolio .box4 {
-  background-image: url(./img/platzi-music.PNG);
+  background-image: url(../img/platzi-music.PNG);
 }
 .portafolio .box5 {
-  background-image: url(./img/100tifico.PNG);
+  background-image: url(../img/100tifico.PNG);
 }
 
 .portafolio__box:hover .portafolio__texto {

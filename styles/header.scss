@@ -3,7 +3,6 @@ header {
   padding: 4px;
   align-items: center;
   justify-content: space-around;
-
   .header__logo {
     width: 50px;
     height: 50px;
@@ -62,8 +61,11 @@ header {
 }
 
 .menu.is-active {
-  left: 0vw;
-  transition: 1s;
+  right: 0;
+}
+
+.cerrar {
+  right: -50vw !important;
 }
 
 @media screen and (max-width: 850px) {
@@ -75,21 +77,21 @@ header {
       font-size: 20px;
     }
     .menu {
+      padding: 10% 0;
       background: $color-background;
       position: fixed;
+      width: 50vw;
       top: 10%;
-      left: -200vw;
-      width: 100%;
+      right: -50vw;
       transition: 1s;
       z-index: 100;
       text-align: center;
+      border-radius: 32px;
       ul {
         padding: 0;
-        justify-content: center;
+        text-align: left;
         display: grid;
         a {
-          text-transform: uppercase;
-          font-weight: bold;
           color: $color-principal;
           cursor: pointer;
         }
