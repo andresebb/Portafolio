@@ -5,6 +5,10 @@ $color-azul-oscuro-letra: #2f4858;
 $color-letras: #bebebe;
 $color-background: #13223c;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   margin: 0;

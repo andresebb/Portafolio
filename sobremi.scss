@@ -58,6 +58,11 @@
     &__container {
       grid-gap: 18px;
     }
+    &__imagen {
+      img {
+        height: 260px;
+      }
+    }
   }
 }
 

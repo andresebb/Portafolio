@@ -193,6 +193,12 @@
 
 @media screen and (max-width: 450px) {
   .hero {
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
     margin-bottom: 360px;
     ul {
       height: 42px;
