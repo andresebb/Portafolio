@@ -1,21 +1,19 @@
-.habilidades {
-  margin-bottom: 36px;
-  color: white;
-  h2,
-  h1 {
-    text-align: center;
-  }
-}
-
 .habilidades__container {
   display: grid;
   grid-template-columns: 200px 200px;
   justify-content: center;
   grid-gap: 20px;
-}
 
-.habilidades p {
-  text-align: center;
+  .caja {
+    text-align: center;
+    padding: 14px;
+    background: #15294c;
+    border-radius: 6px;
+    /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 .nivel {
@@ -49,16 +47,6 @@
   width: 70%;
 }
 
-.caja {
-  text-align: center;
-  padding: 14px;
-  background: #15294c;
-  border-radius: 6px;
-  /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
-  transition: 0.5s;
-  cursor: pointer;
-}
-
 .caja:hover {
   transform: scale(1.2);
   z-index: 50;
@@ -75,4 +63,34 @@
 .caja span {
   font-size: 28px;
   padding: 6px;
+}
+
+@media screen and (max-width: 1050px) {
+  .habilidades__container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    grid-gap: 30px 45px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .habilidades__container {
+    grid-template-columns: 300px;
+    .caja {
+      padding: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .habilidades__container {
+    grid-template-columns: 300px;
+    p {
+      font-size: 14px;
+    }
+    .caja {
+      padding: 28px;
+    }
+  }
 }

@@ -9,10 +9,6 @@ li {
   list-style: none;
 }
 
-main {
-  position: relative;
-}
-
 header {
   display: flex;
   padding: 4px;
@@ -66,7 +62,10 @@ header a {
 
 @media screen and (max-width: 850px) {
   header {
-    height: 50px;
+    /* height: 50px; */
+    /* #burger-menu {
+      display: block;
+    } */
   }
   header a {
     font-size: 20px;
@@ -93,16 +92,18 @@ header a {
     color: #2bc48a;
     cursor: pointer;
   }
-  header #burger-menu {
-    display: block;
-  }
 
   .header__logo {
     display: none;
   }
 
   #burger-menu {
-    right: 12%;
+    right: 4%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #burger-menu {
+    right: 10%;
   }
 }
 .hero {
@@ -146,7 +147,7 @@ header a {
   text-align: center;
   position: absolute;
   z-index: 5;
-  top: 41%;
+  top: 38%;
   left: 3%;
 }
 .logos .logo {
@@ -276,7 +277,6 @@ header a {
     position: inherit;
   }
   .logos .logo {
-    color: gray;
     padding: 4px;
     border-radius: 6px;
   }
@@ -289,6 +289,9 @@ header a {
   }
 }
 @media screen and (max-width: 450px) {
+  .hero {
+    margin-bottom: 360px;
+  }
   .hero ul {
     height: 42px;
   }
@@ -303,7 +306,7 @@ header a {
     justify-content: center;
     font-size: 28px;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     color: #4b576d;
   }
   .hero h1 li {
@@ -346,6 +349,7 @@ header a {
   margin-top: 264px;
   position: relative;
   color: white;
+  padding-bottom: 76px;
 }
 .sobremi h1 {
   text-align: center;
@@ -367,24 +371,42 @@ header a {
   grid-gap: 61px;
 }
 
-.habilidades {
-  margin-bottom: 36px;
-  color: white;
+@media screen and (max-width: 1050px) {
+  .sobremi h1 {
+    margin-top: 0;
+  }
+  .sobremi__container {
+    grid-template-columns: 500px;
+  }
 }
-.habilidades h2,
-.habilidades h1 {
-  text-align: center;
+@media screen and (max-width: 600px) {
+  .sobremi h1 {
+    font-size: 32px;
+  }
+  .sobremi__container {
+    grid-gap: 18px;
+  }
 }
-
+@media screen and (max-width: 400px) {
+  .sobremi__container {
+    grid-template-columns: 338px;
+  }
+}
 .habilidades__container {
   display: grid;
   grid-template-columns: 200px 200px;
   justify-content: center;
   grid-gap: 20px;
 }
-
-.habilidades p {
+.habilidades__container .caja {
   text-align: center;
+  padding: 14px;
+  background: #15294c;
+  border-radius: 6px;
+  /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
+  transition: 0.5s;
+  outline: none;
+  cursor: pointer;
 }
 
 .nivel {
@@ -418,16 +440,6 @@ header a {
   width: 70%;
 }
 
-.caja {
-  text-align: center;
-  padding: 14px;
-  background: #15294c;
-  border-radius: 6px;
-  /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
-  transition: 0.5s;
-  cursor: pointer;
-}
-
 .caja:hover {
   transform: scale(1.2);
   z-index: 50;
@@ -443,9 +455,36 @@ header a {
   padding: 6px;
 }
 
+@media screen and (max-width: 1050px) {
+  .habilidades__container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    grid-gap: 30px 45px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .habilidades__container {
+    grid-template-columns: 300px;
+  }
+  .habilidades__container .caja {
+    padding: 28px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .habilidades__container {
+    grid-template-columns: 300px;
+  }
+  .habilidades__container p {
+    font-size: 14px;
+  }
+  .habilidades__container .caja {
+    padding: 28px;
+  }
+}
 .portafolio {
   background: #13223c;
-  position: relative;
+  padding-bottom: 76px;
 }
 .portafolio h1 {
   text-align: center;
@@ -462,6 +501,11 @@ header a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+.portafolio__box-container {
+  background: #15294c;
+  border-radius: 6px;
+  margin: 8px;
 }
 .portafolio__box {
   width: 331px;
@@ -519,46 +563,128 @@ header a {
   height: 100%;
 }
 
+@media screen and (max-width: 600px) {
+  .portafolio h1 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .portafolio p {
+    font-size: 14px;
+  }
+}
 .contacto {
   padding: 24px;
   position: relative;
-  background-image: url(./img/bg-curvy-desktop.svg);
 }
-
+.contacto h1 {
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  color: #13223c;
+}
 .contacto h2 {
-  background: -webkit-linear-gradient(yellow, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: tomato;
+  text-align: center;
+  color: #bebebe;
+  font-weight: 400;
 }
-
-.contacto__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.contacto form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-
-.contacto__imagen {
-  height: 318px;
-  width: 500px;
+.contacto__sujeto {
+  display: inherit;
+}
+.contacto__mensaje {
+  display: grid;
+  grid-template-rows: 1fr 56px;
+}
+.contacto__mensaje button {
+  margin: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: #2bc48a;
+  color: white;
+  outline: none;
+  cursor: pointer;
 }
 
 input {
   padding: 8px;
   outline: none;
   border-radius: 6px;
-  border: 1px solid gray;
+  border: 1px solid #e8e8e8;
   margin: 6px;
 }
 
-.mensaje {
-  width: 92%;
-  padding-bottom: 64px;
+textarea {
+  cursor: auto;
+  outline: none;
+  border: 1px solid #e8e8e8;
+  margin: 6px;
+  border-radius: 6px;
+  resize: none;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
 }
 
-form {
-  max-width: 500px;
-  text-align: center;
+@media screen and (max-width: 600px) {
+  .contacto h1 {
+    font-size: 32px;
+  }
+  .contacto h2 {
+    font-size: 22px;
+  }
+  .contacto form {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contacto h2 {
+    font-size: 16px;
+  }
+}
+footer {
+  height: 62px;
+  display: flex;
+  justify-content: space-around;
+  background: #18202e;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  font-size: 22px;
+  margin: 24px;
+  padding: 8px;
+  font-weight: 300;
+  border-radius: 6px;
+  color: var(--gris);
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+.logo-footer {
+  color: gray;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+    text-align: center;
+    padding: 14px;
+  }
+  footer p {
+    margin: 6px;
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

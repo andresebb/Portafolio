@@ -1,41 +1,82 @@
 .contacto {
   padding: 24px;
   position: relative;
-  background-image: url(./img/bg-curvy-desktop.svg);
-}
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    color: $color-background;
+  }
 
-.contacto h2 {
-  background: -webkit-linear-gradient(yellow, red);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: tomato;
-}
+  h2 {
+    text-align: center;
+    color: $color-letras;
+    font-weight: 400;
+  }
 
-.contacto__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-.contacto__imagen {
-  height: 318px;
-  width: 500px;
+  &__sujeto {
+    display: inherit;
+  }
+
+  &__mensaje {
+    display: grid;
+    grid-template-rows: 1fr 56px;
+    button {
+      margin: 6px;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      background: $color-principal;
+      color: white;
+      outline: none;
+      cursor: pointer;
+    }
+  }
 }
 
 input {
   padding: 8px;
   outline: none;
   border-radius: 6px;
-  border: 1px solid gray;
+  border: 1px solid #e8e8e8;
   margin: 6px;
 }
-
-.mensaje {
-  width: 92%;
-  padding-bottom: 64px;
+textarea {
+  cursor: auto;
+  outline: none;
+  border: 1px solid #e8e8e8;
+  margin: 6px;
+  border-radius: 6px;
+  resize: none;
+  height: 100px;
+  font-family: "Poppins", sans-serif;
 }
 
-form {
-  max-width: 500px;
-  text-align: center;
+@media screen and (max-width: 600px) {
+  .contacto {
+    h1 {
+      font-size: 32px;
+    }
+    h2 {
+      font-size: 22px;
+    }
+    form {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contacto {
+    h2 {
+      font-size: 16px;
+    }
+  }
 }

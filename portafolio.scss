@@ -1,6 +1,6 @@
 .portafolio {
   background: $color-background;
-  position: relative;
+  padding-bottom: 76px;
   h1 {
     text-align: center;
     text-transform: uppercase;
@@ -17,6 +17,12 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  &__box-container {
+    background: #15294c;
+    border-radius: 6px;
+    margin: 8px;
   }
 
   &__box {
@@ -80,4 +86,20 @@
 .portafolio__imagen {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .portafolio {
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portafolio {
+    p {
+      font-size: 14px;
+    }
+  }
 }

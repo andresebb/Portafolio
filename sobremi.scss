@@ -17,6 +17,7 @@
   margin-top: 264px;
   position: relative;
   color: white;
+  padding-bottom: 76px;
   h1 {
     text-align: center;
     text-transform: uppercase;
@@ -37,5 +38,33 @@
     justify-content: center;
     align-items: center;
     grid-gap: 61px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .sobremi {
+    h1 {
+      margin-top: 0;
+    }
+    &__container {
+      grid-template-columns: 500px;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .sobremi {
+    h1 {
+      font-size: 32px;
+    }
+    &__container {
+      grid-gap: 18px;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sobremi {
+    &__container {
+      grid-template-columns: 338px;
+    }
   }
 }

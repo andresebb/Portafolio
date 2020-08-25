@@ -55,7 +55,7 @@ header {
 
 @media screen and (max-width: 850px) {
   header {
-    height: 50px;
+    /* height: 50px; */
     a {
       font-size: 20px;
     }
@@ -81,15 +81,21 @@ header {
         }
       }
     }
-    #burger-menu {
+    /* #burger-menu {
       display: block;
-    }
+    } */
   }
   .header__logo {
     display: none;
   }
 
   #burger-menu {
-    right: 12%;
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #burger-menu {
+    right: 10%;
   }
 }
