@@ -7,6 +7,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap"
       rel="stylesheet"
     />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -19,29 +21,34 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Andres Betancourt</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbarNav">
     <main>
       <div class="principal">
-        <header class="header " id="header">
-          <div class="header__logo">
-            <a href="#header">
-              <img
-                src="./img/logo-header2.svg"
-                alt="header logo"
-              />
+        <header class="header container-fluid p-0 fixed-top d-md-block" id="header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+              <img width="50px" height="50px" src="img/logo-header2.svg" alt="">
             </a>
-          </div>
-          <i class="fas fa-ellipsis-h" id="burger-menu"></i>
-          <nav class="menu">
-            <ul>
-              <li>
-                <a href="#header" class="inicio a-header">Inicio </a>
-                <div class="borde-cortado inicio"></div>
-              </li>
-              <li><a href="#sobremi" class="sobre mi a-header">Sobre mi</a></li>
-              <li><a href="#portafolio" class="proyectos a-header">Portafolio</a></li>
-              <li><a href="#contacto" class="contactame a-header">Contacto</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                
+              </ul>
+            </div>
           </nav>
         </header>
         <section class="hero">
@@ -69,7 +76,7 @@
       </div>
       <div class="elcontainer">
         <div class="imagen-cool"></div>
-        <section class="sobremi" id="sobremi">
+        <section class="sobremi" id="about">
           <h1>sobre mi</h1>
           <div class="sobremi__container">
             <div class="sobremi__container-me wow animate__animated animate__rotateInDownLeft">
@@ -182,81 +189,56 @@
           </div>
         </section>
       </div>
-      <section class="portafolio" id="portafolio">
-        <h1 class="portafolio__titulo">Portafolio</h1>
-        <p>Estas son algunas de las tecnologias que majeo</p>
-        <div class="portafolio__container">
-
-          <div class="portafolio__box-container">
-            <div class="portafolio__box box1 wow animate__animated animate__zoomInUp">
-              <div class="portafolio__texto">
-                <div class="portafolio__texto--container">
-                  <h3>Woorki</h3>
-                  <div class="portafolio__texto-skills">
-                    <p>React</p>
-                    <p>javascript</p>
-                    <p>html</p>
-                  </div>
+      <section class="portafolio pt-4" id="portafolio">
+        <h1 class="portafolio__titulo text-center">Portafolio</h1>
+        <p class="text-center">Algunos de mis proyectos </p>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+              <div class="card">
+                <img src="img/easy-bank.png" class="card-img-top" alt="easybank">
+                <div class="card-body">
+                  <h5 class="card-title">Easy Bank</h5>
+                  <p class="card-text text-left">LLeva tus finanzas al futuro. Tu cuenta EasyBank será una ventanilla única para gastar, ahorrar presupuestos, invertir y mucho mas</p>
+                  <a class="btn btn-outline-primary" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="img/campii.png" class="card-img-top" alt="campii">
+                <div class="card-body">
+                  <h5 class="card-title">Campii</h5>
+                  <p class="card-text text-left">
+                  Acompananos a disfrutar todas esas aventuras al aire libre,
+                  conoceras hermosos paisajes y destinos maravillosos, Somos Campii!
+                  antes... </p>
+                  <a class="btn btn-outline-primary" href="https://andresebb.github.io/campii/" target="blank">Ver sitio web</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="portafolio__box-container">
-          <div class="portafolio__box box2 wow animate__animated animate__zoomInUp">
-            <div class="portafolio__texto">
-              <div class="portafolio__texto--container">
-                <h3>Woorki</h3>
-                <div class="portafolio__texto-skills">
-                  <p>React</p>
-                  <p>javascript</p>
-                  <p>html</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="portafolio__box-container">
-          <div class="portafolio__box box3 wow animate__animated animate__zoomInUp">
-            <div class="portafolio__texto">
-              <div class="portafolio__texto--container">
-                <h3>Platzi Video</h3>
-                <div class="portafolio__texto-skills">
-                  <p>html</p>
-                  <p>css</p>
-                  <p>javascript</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          <div class="portafolio__box-container">
-            <div class="portafolio__box box4 wow animate__animated animate__zoomInUp">
-              <div class="portafolio__texto">
-                <div class="portafolio__texto--container">
-                  <h3>PLatzi music</h3>
-                  <div class="portafolio__texto-skills">
-                    <p>React</p>
-                    <p>javascript</p>
-                    <p>html</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portafolio__box-container">
-            <div class="portafolio__box box5 wow animate__animated animate__zoomInUp">
-              <div class="portafolio__texto">
-                <div class="portafolio__texto--container">
-                  <h3>100tifico</h3>
-                  <div class="portafolio__texto-skills">
-                    <p>html</p>
-                    <p>css</p>
-                    <p>javascript</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
+        </div>
+        
       </section>
       <section class="contacto" id="contacto">
         <h1>Contacto</h1>
@@ -292,6 +274,13 @@
         
       </footer>
     </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
     
     <script src="https://wowjs.uk/dist/wow.min.js"></script>
     <script>

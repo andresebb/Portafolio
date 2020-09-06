@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-size: 16px;
+  font-size: 16px !important;
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #bebebe;
@@ -13,41 +13,60 @@ li {
   list-style: none;
 }
 
+.nav-link:hover {
+  color: #2bc48a !important;
+}
+
+.nav-link {
+  margin-right: 2rem;
+  font-weight: 500;
+}
+
 header {
+  background: white !important;
+}
+
+/* header {
   display: flex;
   padding: 4px;
   align-items: center;
   justify-content: space-around;
-}
-header .header__logo {
-  width: 50px;
-  height: 50px;
-}
-header .header__logo img {
-  width: 100%;
-  height: 100%;
-}
-header nav ul {
-  display: flex;
-}
-header nav ul li a:hover {
-  color: #2bc48a;
-}
-header .a-header {
-  text-decoration: none;
-  font-size: 22px;
-  margin: 24px;
-  font-weight: 300;
-  color: var(--gris);
-}
-header .a-header:last-child {
-  margin-right: 0;
+
+  .header__logo {
+    width: 50px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      li a:hover {
+        color: $color-principal;
+      }
+    }
+  }
+
+  .a-header {
+    text-decoration: none;
+    font-size: 22px;
+    margin: 24px;
+    font-weight: 300;
+    color: var(--gris);
+  }
+
+  .a-header:last-child {
+    margin-right: 0;
+  }
 }
 
 .borde-cortado {
   width: 20%;
   height: 3px;
-  background: #2bc48a;
+  background: $color-principal;
   margin-left: 24px;
   display: none;
 }
@@ -80,39 +99,38 @@ header .a-header:last-child {
 
 @media screen and (max-width: 850px) {
   header {
-    /* height: 50px; */
+    /* height: 50px; 
     display: block;
     padding: 10px 24px;
+    a {
+      font-size: 20px;
+    }
+    .menu {
+      padding: 10% 0;
+      background: $color-background;
+      position: fixed;
+      width: 50vw;
+      top: 10%;
+      right: -50vw;
+      transition: 1s;
+      z-index: 100;
+      text-align: center;
+      border-radius: 32px;
+      ul {
+        padding: 0;
+        text-align: left;
+        display: grid;
+        a {
+          color: $color-principal;
+          cursor: pointer;
+        }
+      }
+    }
+    #burger-menu {
+      display: block;
+      position: fixed;
+    }
   }
-  header a {
-    font-size: 20px;
-  }
-  header .menu {
-    padding: 10% 0;
-    background: #13223c;
-    position: fixed;
-    width: 50vw;
-    top: 10%;
-    right: -50vw;
-    transition: 1s;
-    z-index: 100;
-    text-align: center;
-    border-radius: 32px;
-  }
-  header .menu ul {
-    padding: 0;
-    text-align: left;
-    display: grid;
-  }
-  header .menu ul a {
-    color: #2bc48a;
-    cursor: pointer;
-  }
-  header #burger-menu {
-    display: block;
-    position: fixed;
-  }
-
   .header__logo {
     display: fixed;
   }
@@ -121,21 +139,26 @@ header .a-header:last-child {
     right: 4%;
   }
 }
+
 @media screen and (max-width: 600px) {
-  header .header__logo {
-    width: 40px;
-    height: 40px;
-  }
-  header .header__logo img {
-    width: 100%;
-    height: 100%;
+  header {
+    .header__logo {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
+
 @media screen and (max-width: 450px) {
   #burger-menu {
     right: 8%;
   }
 }
+ */
 .hero {
   height: 500px;
   display: flex;
@@ -160,6 +183,8 @@ header .a-header:last-child {
 }
 .hero h3 {
   font-weight: 300;
+  font-size: 1rem;
+  margin-top: 8px;
 }
 .hero ul {
   width: 430px;
@@ -451,7 +476,7 @@ header .a-header:last-child {
   background: #15294c;
   border-radius: 6px;
   /* box-shadow: 6px 10px 12px -4px #d3d0d0; */
-  transition: 0.5s;
+  transition: 1s;
   outline: none;
   cursor: pointer;
 }
@@ -550,7 +575,7 @@ header .a-header:last-child {
   }
 }
 .portafolio {
-  background: #13223c;
+  background: #fefefe;
   padding-bottom: 76px;
 }
 .portafolio h1 {
