@@ -23,7 +23,7 @@
   </head>
   <body data-spy="scroll" data-target="#navbarNav">
     <main>
-      <div class="principal">
+      <div class="principal" id="home">
         <header class="header container-fluid p-0 fixed-top d-md-block" id="header">
           <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
@@ -35,7 +35,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item ">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#about">Sobre mi</a>
@@ -52,8 +52,29 @@
           </nav>
         </header>
         <section class="hero">
-          <div class="hero__container animate__animated animate__backInDown">
-            <h2>Bienvenido</h2>
+          <div class="hero__container container animate__animated animate__backInDown">
+            <div class="row">
+              <div class="col">
+                <h1>
+                  Yo soy,
+                  <ul class="lista">
+                    <li class="elemento">Andres Betancourt</li>
+                    <li class="elemento">Frontend Developer</li>
+                  </ul>
+                </h1>
+                <h3>
+                  "Incluso si fallas, terminaras haciendo algo genial en el proceso"
+                </h3>
+                <div class="logos">
+                  <div class="logos__container">
+                    <a href="https://twitter.com/andresebb001" target="_blank" class="icon-twitter logo"></a>
+                    <a href="https://www.instagram.com/andresebb/" target="_blank" class="icon-instagram logo"></a>
+                    <a href="https://github.com/andresebb" target="_blank" class="icon-github logo"></a>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!--    <h2>Bienvenido</h2>
             <h1>
               Yo soy,
               <ul class="lista">
@@ -65,13 +86,8 @@
               "Incluso si fallas, terminaras haciendo algo genial en el proceso"
             </h3>
           </div>
-          <div class="logos">
-            <div class="logos__container">
-              <a href="https://twitter.com/andresebb001" target="_blank" class="icon-twitter logo"></a>
-              <a href="https://www.instagram.com/andresebb/" target="_blank" class="icon-instagram logo"></a>
-              <a href="https://github.com/andresebb" target="_blank" class="icon-github logo"></a>
-            </div>
-          </div>
+          
+          </div> -->
         </section>
       </div>
       <div class="elcontainer">
@@ -83,7 +99,7 @@
               <div class="sobremi__imagen">
               <img src="./img/perfil.png" alt="Foto perfil" />
             </div>
-            <div class="sobremi__texto">
+            <div class="sobremi__texto mt-4">
               <p>
                 Soy un joven programador 👨🏽‍💻 desde barinas, Venezuela. Actualmente soy
                 estudiante en <a>Platzi</a> .Cada dia me esfuerzo por aprender
@@ -196,42 +212,72 @@
           <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4">
               <div class="card">
-                <img src="img/easy-bank.png" class="card-img-top" alt="easybank">
+                <img style="max-height: 260px" src="img/easy-bank.png" class="card-img-top" alt="easybank">
                 <div class="card-body">
-                  <h5 class="card-title">Easy Bank</h5>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Easy Bank</h5>
+                    <div>
+                      <span class="badge badge-light">html</span>
+                      <span class="badge badge-light">css</span>
+                      <span class="badge badge-light">javascript</span>
+                      <span class="badge badge-light">bootstrap</span>
+                    </div>
+                  </div>
+                  
                   <p class="card-text text-left">LLeva tus finanzas al futuro. Tu cuenta EasyBank será una ventanilla única para gastar, ahorrar presupuestos, invertir y mucho mas</p>
-                  <a class="btn btn-outline-primary" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
+                  <a class="botono" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
                 </div>
               </div>
             </div>
             <div class="col mb-4">
               <div class="card">
-                <img src="img/campii.png" class="card-img-top" alt="campii">
+                <img style="max-height: 260px" src="img/campii.png" class="card-img-top" alt="campii">
                 <div class="card-body">
-                  <h5 class="card-title">Campii</h5>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Campii</h5>
+                    <div>
+                      <span class="badge badge-light">html</span>
+                      <span class="badge badge-light">css</span>
+                      <span class="badge badge-light">bootstrap</span>
+                    </div>
+                  </div>
                   <p class="card-text text-left">
                   Acompananos a disfrutar todas esas aventuras al aire libre,
                   conoceras hermosos paisajes y destinos maravillosos, Somos Campii!
                   antes... </p>
-                  <a class="btn btn-outline-primary" href="https://andresebb.github.io/campii/" target="blank">Ver sitio web</a>
+                  <a class="botono" href="https://andresebb.github.io/campii/" target="blank">Ver sitio web</a>
                 </div>
               </div>
             </div>
             <div class="col mb-4">
               <div class="card">
-                <img src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
+                <img style="max-height: 260px" src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <h5 class="card-title">PLatzi Video</h5>
+                  <p class="card-text text-left">En platzi video podras encontrar las peliculas que estan en cartelera y enterarte
+                    de todo acerca del cine.
+                  </p>
+                  <a class="botono" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
+
                 </div>
               </div>
             </div>
             <div class="col mb-4">
               <div class="card">
-                <img src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
+                <img style="max-height: 260px" src="img/flags.png" class="card-img-top" alt="img/platzi-video.PNG">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title text-left">Flags Countries</h5>
+                    <div>
+                      <span class="badge badge-light">React</span>
+                      <span class="badge badge-light">Redux</span>
+                    </div>
+                  </div>
+
+                  <p class="card-text text-left">Aca listamos las banderas de la mayoria de los paises a traves de llamado 
+                    a una api, puedes filtrar entre continente y nombre de dicho pais
+                  </p>
+                  <a class="botono" href="https://andresebb.github.io/flags/" target="blank">Ver sitio web</a>
                 </div>
               </div>
             </div>
@@ -263,15 +309,23 @@
           </form>
         </div>
       </section>
-      <footer>
-        <div>
-          <p>Copyright © 2020 - Made by Andres Betancourt</p>
+      <footer class="container-fluid p-4 text-center">
+        <div style="width: 100%" class="row d-flex justify-content-center align-items-center">
+          <div class="col d-md-none">
+            <p class="mb-4 mb-md-0">Copyright © 2020 - Made by Andres Betancourt</p>       
+              <a href="https://twitter.com/andresebb001" target="_blank" class="icon-twitter "></a>
+              <a href="https://www.instagram.com/andresebb/" target="_blank" class="icon-instagram "></a>
+              <a href="https://github.com/andresebb" target="_blank" class="icon-github "></a>
+          </div>
+          <div class="col-6 d-none d-md-block text-left">
+            <p class="mb-0">Copyright © 2020 - Made by Andres Betancourt</p>       
+          </div>
+          <div class="col d-none d-md-block">
+            <a href="https://twitter.com/andresebb001" target="_blank" class="icon-twitter "></a>
+              <a href="https://www.instagram.com/andresebb/" target="_blank" class="icon-instagram "></a>
+              <a href="https://github.com/andresebb" target="_blank" class="icon-github "></a>
+          </div>
         </div>
-        <div class="logos__footer">
-          <a href="https://twitter.com/andresebb001" target="_blank" class="icon-twitter logo-footer"></a>
-          <a href="https://www.instagram.com/andresebb/" target="_blank" class="icon-instagram logo-footer"></a>
-          <a href="https://github.com/andresebb" target="_blank" class="icon-github logo-footer"></a>
-        
       </footer>
     </main>
 

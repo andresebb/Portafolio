@@ -19,3 +19,33 @@ body {
 li {
   list-style: none;
 }
+
+.active {
+  color: $color-principal !important;
+}
+
+.botono {
+  border: 1px solid #2bc48a;
+  border-radius: 5px;
+  padding: 6px 12px;
+  background: white;
+  color: $color-principal;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.botono:hover {
+  background: $color-principal;
+  color: white;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: 1s;
+}
+.card img:hover {
+  transform: scale(1.1);
+}

@@ -13,6 +13,37 @@ li {
   list-style: none;
 }
 
+.active {
+  color: #2bc48a !important;
+}
+
+.botono {
+  border: 1px solid #2bc48a;
+  border-radius: 5px;
+  padding: 6px 12px;
+  background: white;
+  color: #2bc48a;
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.botono:hover {
+  background: #2bc48a;
+  color: white;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card img {
+  transition: 1s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
 .nav-link:hover {
   color: #2bc48a !important;
 }
@@ -166,6 +197,9 @@ header {
   justify-content: center;
   text-align: center;
 }
+.hero__container {
+  margin-top: 14vh;
+}
 .hero h2 {
   font-weight: 300;
   letter-spacing: 18px;
@@ -175,6 +209,7 @@ header {
 .hero h1 {
   font-size: 36px;
   margin: 0;
+  font-weight: bold !important;
   color: #13223c;
 }
 .hero h1 li {
@@ -190,21 +225,13 @@ header {
   width: 430px;
   overflow: hidden;
   display: inline-block;
-  height: 60px;
+  height: 50px;
   margin-bottom: -20px;
   vertical-align: bottom;
   padding: 0;
   margin: 0;
 }
 
-.logos {
-  width: 75px;
-  text-align: center;
-  position: absolute;
-  z-index: 5;
-  top: 38%;
-  left: 3%;
-}
 .logos .logo {
   color: gray;
   line-height: 3;
@@ -259,7 +286,7 @@ header {
 /********************Mover el andres betancour y frontend dev*/
 .elemento:first-child {
   animation-name: moverTexto;
-  animation-duration: 6s;
+  animation-duration: 4s;
   animation-delay: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -270,7 +297,7 @@ header {
     margin-top: 0;
   }
   50% {
-    margin-top: -65px;
+    margin-top: -50px;
   }
   100% {
     margin-top: 0;
@@ -301,7 +328,7 @@ header {
     margin-bottom: 150px;
   }
   .hero ul {
-    height: 55px;
+    height: 45px;
   }
   .hero h2 {
     font-weight: 300;
@@ -342,11 +369,26 @@ header {
     font-weight: 300;
     color: var(--gris);
   }
+
+  @keyframes moverTexto {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: -60px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
 }
 @media screen and (max-width: 450px) {
   .hero {
     margin-bottom: 360px;
     padding: 6px 12px;
+  }
+  .hero__container {
+    margin-top: 10vh;
   }
   .hero ul {
     height: 42px;
@@ -374,13 +416,26 @@ header {
     font-size: 14px;
     font-weight: 300;
   }
+  .hero .logos .logo {
+    color: gray;
+    line-height: 3;
+    padding: 4px;
+    border-radius: 6px;
+  }
+  .hero .logos a {
+    text-decoration: none;
+    font-size: 22px;
+    margin: 12px;
+    font-weight: 300;
+    color: var(--gris);
+  }
 
   @keyframes moverTexto {
     0% {
       margin-top: 0;
     }
     50% {
-      margin-top: -45px;
+      margin-top: -40px;
     }
     100% {
       margin-top: 0;
@@ -740,7 +795,6 @@ textarea {
   }
 }
 footer {
-  height: 62px;
   display: flex;
   justify-content: space-around;
   background: #18202e;
