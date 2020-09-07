@@ -2,8 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --animate-delay: 0.3s;
+}
+
 body {
   font-size: 16px !important;
+  position: relative;
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #bebebe;
@@ -17,19 +22,44 @@ li {
   color: #2bc48a !important;
 }
 
+.botonoo {
+  border-radius: 5px;
+  padding: 6px 12px;
+  background: white;
+  color: white;
+  background: #2bc48a;
+  text-decoration: none;
+  box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.botonoo:hover {
+  color: white;
+  text-decoration-line: none;
+}
+
+.botonoo:active {
+  transform: scale(0.9);
+}
+
 .botono {
   border: 1px solid #2bc48a;
   border-radius: 5px;
   padding: 6px 12px;
   background: white;
   color: #2bc48a;
+  cursor: pointer;
   text-decoration: none;
-  text-decoration-line: none;
+}
+
+.botonoo:active {
+  transform: scale(0.9) !important;
 }
 
 .botono:hover {
   background: #2bc48a;
   color: white;
+  text-decoration-line: none;
 }
 
 .card {
@@ -323,9 +353,7 @@ header {
 @media screen and (max-width: 850px) {
   .hero {
     display: block;
-    height: auto;
     margin-top: 150px;
-    margin-bottom: 150px;
   }
   .hero ul {
     height: 45px;
@@ -384,7 +412,6 @@ header {
 }
 @media screen and (max-width: 450px) {
   .hero {
-    margin-bottom: 360px;
     padding: 6px 12px;
   }
   .hero__container {
@@ -455,25 +482,18 @@ header {
   }
 }
 .imagen-cool {
-  height: 450px;
-  background-image: url(../img/bg-curvy-desktop.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 68%;
-  left: 0;
-  right: 0;
+  max-width: 100vw;
 }
 
-.elcontainer {
-  background: #13223c;
+.imagen-cool img {
+  width: 100%;
 }
 
 .sobremi {
-  margin-top: 264px;
   position: relative;
   color: white;
   padding-bottom: 76px;
+  background: #13223c;
 }
 .sobremi h1 {
   text-align: center;
@@ -631,7 +651,6 @@ header {
 }
 .portafolio {
   background: #fefefe;
-  padding-bottom: 76px;
 }
 .portafolio h1 {
   text-align: center;
@@ -736,6 +755,7 @@ header {
   text-align: center;
   color: #bebebe;
   font-weight: 400;
+  font-size: 1.2rem;
 }
 .contacto form {
   display: grid;

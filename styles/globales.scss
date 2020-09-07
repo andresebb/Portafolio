@@ -9,8 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --animate-delay: 0.3s;
+}
+
 body {
   font-size: 16px !important;
+  position: relative;
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #bebebe;
@@ -24,19 +29,44 @@ li {
   color: $color-principal !important;
 }
 
+.botonoo {
+  border-radius: 5px;
+  padding: 6px 12px;
+  background: white;
+  color: white;
+  background: $color-principal;
+  text-decoration: none;
+  box-shadow: inset 0 -0.2em rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.botonoo:hover {
+  color: white;
+  text-decoration-line: none;
+}
+
+.botonoo:active {
+  transform: scale(0.9);
+}
+
 .botono {
   border: 1px solid #2bc48a;
   border-radius: 5px;
   padding: 6px 12px;
   background: white;
   color: $color-principal;
+  cursor: pointer;
   text-decoration: none;
-  text-decoration-line: none;
+}
+
+.botonoo:active {
+  transform: scale(0.9) !important;
 }
 
 .botono:hover {
   background: $color-principal;
   color: white;
+  text-decoration-line: none;
 }
 
 .card {

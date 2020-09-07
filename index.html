@@ -21,10 +21,9 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Andres Betancourt</title>
   </head>
-  <body data-spy="scroll" data-target="#navbarNav">
+  <body data-spy="scroll" data-target="#navbarNav" >
     <main>
-      <div class="principal" id="home">
-        <header class="header container-fluid p-0 fixed-top d-md-block" id="header">
+        <header class="header container-fluid p-0 fixed-top d-md-block" id="home">
           <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
               <img width="50px" height="50px" src="img/logo-header2.svg" alt="">
@@ -89,13 +88,13 @@
           
           </div> -->
         </section>
-      </div>
-      <div class="elcontainer">
-        <div class="imagen-cool"></div>
-        <section class="sobremi" id="about">
+        <div class="imagen-cool">
+          <img src="img/bg-curvy-desktop.svg" alt="">
+        </div>
+        <section class="sobremi " id="about">
           <h1>sobre mi</h1>
           <div class="sobremi__container">
-            <div class="sobremi__container-me wow animate__animated animate__rotateInDownLeft">
+            <div class="sobremi__container-me ">
               <div class="sobremi__imagen">
               <img src="./img/perfil.png" alt="Foto perfil" />
             </div>
@@ -110,7 +109,7 @@
             <div class="sobremi__container-habilidades">
               <p>Algunas de las tecnologias que manejo </p>
               <div class="habilidades__container">
-                <div class="caja wow animate__animated animate__zoomInDown">
+                <div class="caja wow animate__animated animate__bounceIn">
                   <div>
                     <span class="icon-html-five"></span>
                   </div>
@@ -125,7 +124,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="caja wow animate__animated animate__zoomInDown">
+                <div class="caja wow animate__animated animate__bounceIn">
                   <div>
                     <span class="icon-css3"></span>
                   </div>
@@ -140,7 +139,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="caja wow animate__animated animate__zoomInDown">
+                <div class="caja wow animate__animated animate__bounceIn">
                   <div>
                     <span class="icon-bootstrap"></span>
                   </div>
@@ -155,7 +154,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="caja wow animate__animated animate__zoomInDown">
+                <div class="caja wow animate__animated animate__bounceIn">
                   <div>
                     <span class="icon-javascript"></span>
                   </div>
@@ -170,7 +169,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="caja wow animate__animated animate__zoomInDown">
+                <div class="caja wow animate__animated animate__bounceIn">
                   <div>
                     <span class="icon-sass"></span>
                   </div>
@@ -185,7 +184,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="caja wow animate__animated animate__zoomInDown">
+                <div class="caja wow animate__animated animate__bounceIn">
                   <div>
                     <span class="icon-react"></span>
                   </div>
@@ -204,99 +203,101 @@
             </div>
           </div>
         </section>
-      </div>
       <section class="portafolio pt-4" id="portafolio">
-        <h1 class="portafolio__titulo text-center">Portafolio</h1>
-        <p class="text-center">Algunos de mis proyectos </p>
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-4">
-              <div class="card">
-                <img style="max-height: 260px" src="img/easy-bank.png" class="card-img-top" alt="easybank">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Easy Bank</h5>
-                    <div>
-                      <span class="badge badge-light">html</span>
-                      <span class="badge badge-light">css</span>
-                      <span class="badge badge-light">javascript</span>
-                      <span class="badge badge-light">bootstrap</span>
+          <h1 class="portafolio__titulo text-center">Portafolio</h1>
+          <p class="text-center">Algunos de mis proyectos </p>
+          <div class="container">
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col mb-4">
+                <div class="card wow animate__animated animate__flipInY">
+                  <img style="max-height: 260px" src="img/easy-bank.png" class="card-img-top" alt="easybank">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Easy Bank</h5>
+                      <div>
+                        <span class="badge badge-light">html</span>
+                        <span class="badge badge-light">css</span>
+                        <span class="badge badge-light">javascript</span>
+                        <span class="badge badge-light">bootstrap</span>
+                      </div>
                     </div>
+                    
+                    <p class="card-text text-left">LLeva tus finanzas al futuro. Tu cuenta EasyBank será una ventanilla única para gastar, ahorrar presupuestos, invertir y mucho mas</p>
+                    <a class="botono" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
                   </div>
-                  
-                  <p class="card-text text-left">LLeva tus finanzas al futuro. Tu cuenta EasyBank será una ventanilla única para gastar, ahorrar presupuestos, invertir y mucho mas</p>
-                  <a class="botono" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
                 </div>
               </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card">
-                <img style="max-height: 260px" src="img/campii.png" class="card-img-top" alt="campii">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Campii</h5>
-                    <div>
-                      <span class="badge badge-light">html</span>
-                      <span class="badge badge-light">css</span>
-                      <span class="badge badge-light">bootstrap</span>
+              <div class="col mb-4 ">
+                <div class="card wow animate__animated animate__flipInY">
+                  <img style="max-height: 260px" src="img/campii.png" class="card-img-top" alt="campii">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title">Campii</h5>
+                      <div>
+                        <span class="badge badge-light">html</span>
+                        <span class="badge badge-light">css</span>
+                        <span class="badge badge-light">bootstrap</span>
+                      </div>
                     </div>
+                    <p class="card-text text-left">
+                    Acompananos a disfrutar todas esas aventuras al aire libre,
+                    conoceras hermosos paisajes y destinos maravillosos, Somos Campii!
+                    antes... </p>
+                    <a class="botono" href="https://andresebb.github.io/campii/" target="blank">Ver sitio web</a>
                   </div>
-                  <p class="card-text text-left">
-                  Acompananos a disfrutar todas esas aventuras al aire libre,
-                  conoceras hermosos paisajes y destinos maravillosos, Somos Campii!
-                  antes... </p>
-                  <a class="botono" href="https://andresebb.github.io/campii/" target="blank">Ver sitio web</a>
                 </div>
               </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card">
-                <img style="max-height: 260px" src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
-                <div class="card-body">
-                  <h5 class="card-title">PLatzi Video</h5>
-                  <p class="card-text text-left">En platzi video podras encontrar las peliculas que estan en cartelera y enterarte
-                    de todo acerca del cine.
-                  </p>
-                  <a class="botono" target="blank" href="https://andresebb.github.io/easy-bank/">Ver sitio web</a>
+              <div class="col mb-4">
+                <div class="card wow animate__animated animate__flipInY">
+                  <img style="max-height: 260px" src="img/platzi-video.PNG" class="card-img-top" alt="img/platzi-video.PNG">
+                  <div class="card-body">
+                    <h5 class="card-title">PLatzi Video</h5>
+                    <p class="card-text text-left">En platzi video podras encontrar las peliculas que estan en cartelera y enterarte
+                      de todo acerca de las novedades del cine.
+                    </p>
+                    <a class="botono" target="blank" href="https://andresebb.github.io/platzi-video/">Ver sitio web</a>
 
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card">
-                <img style="max-height: 260px" src="img/flags.png" class="card-img-top" alt="img/platzi-video.PNG">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title text-left">Flags Countries</h5>
-                    <div>
-                      <span class="badge badge-light">React</span>
-                      <span class="badge badge-light">Redux</span>
-                    </div>
                   </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card wow animate__animated animate__flipInY">
+                  <img style="max-height: 260px" src="img/flags.png" class="card-img-top" alt="img/platzi-video.PNG">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="card-title text-left">Flags Countries</h5>
+                      <div>
+                        <span class="badge badge-light">React</span>
+                        <span class="badge badge-light">Redux</span>
+                      </div>
+                    </div>
 
-                  <p class="card-text text-left">Aca listamos las banderas de la mayoria de los paises a traves de llamado 
-                    a una api, puedes filtrar entre continente y nombre de dicho pais
-                  </p>
-                  <a class="botono" href="https://andresebb.github.io/flags/" target="blank">Ver sitio web</a>
+                    <p class="card-text text-left">Aca listamos las banderas de la mayoria de los paises a traves de llamado 
+                      a una api, puedes filtrar entre continente y nombre de dicho pais
+                    </p>
+                    <a class="botono" href="https://andresebb.github.io/flags/" target="blank">Ver sitio web</a>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="row">
+                <div class="col text-center mt-4">
+                  <a class="botonoo" href="https://github.com/andresebb?tab=repositories" target="blank">Ver mas proyectos</a>
+                </div>
+              </div>
           </div>
-          
-        </div>
-        
       </section>
       <section class="contacto" id="contacto">
         <h1>Contacto</h1>
-        <div class="contacto__container wow animate__animated animate__bounceInLeft">
-          <h2>¿Tienes alguna idea? Trabajemos juntos!</h2>
+        <div class="">
+          <h2 class="contacto__container wow animate__animated animate__bounceInLeft">¿Tienes alguna idea? Trabajemos juntos!</h2>
           <form action="">
             <div class="contacto__sujeto">
-              <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
-              <input type="text" name="email" id="email" placeholder="Email" />
-              <input type="text" name="email" id="email" placeholder="Asunto" />
+              <input class="contacto__container wow animate__animated animate__bounceInLeft animate__delay-2s" type="text" name="nombre" id="nombre" placeholder="Nombre" />
+              <input class="contacto__container wow animate__animated animate__bounceInLeft animate__delay-3s" type="text" name="email" id="email" placeholder="Email" />
+              <input class="contacto__container wow animate__animated animate__bounceInLeft animate__delay-4s" type="text" name="email" id="email" placeholder="Asunto" />
             </div>
-            <div class="contacto__mensaje">
+            <div class="contacto__mensaje wow animate__animated animate__bounceInLeft animate__delay-5s">
               <textarea name="" id="" cols="30" rows="10"
                 class="mensaje"
                 type="text"
@@ -304,7 +305,7 @@
                 id="mensaje"
                 placeholder="Mensaje">
               </textarea>
-              <button>Enviar</button>
+              <button class="botonoo">Enviar</button>
             </div>
           </form>
         </div>
@@ -340,6 +341,5 @@
     <script>
       new WOW().init();
     </script>
-    <script src="index.js"></script>
   </body>
 </html>

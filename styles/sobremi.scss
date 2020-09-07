@@ -1,23 +1,16 @@
 .imagen-cool {
-  height: 450px;
-  background-image: url(../img/bg-curvy-desktop.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 68%;
-  left: 0;
-  right: 0;
+  max-width: 100vw;
 }
 
-.elcontainer {
-  background: #13223c;
+.imagen-cool img {
+  width: 100%;
 }
 
 .sobremi {
-  margin-top: 264px;
   position: relative;
   color: white;
   padding-bottom: 76px;
+  background: $color-background;
   h1 {
     text-align: center;
     text-transform: uppercase;
