@@ -87,6 +87,10 @@ header {
   background: white !important;
 }
 
+.nav-contacto {
+  margin-right: 0;
+}
+
 /* header {
   display: flex;
   padding: 4px;
